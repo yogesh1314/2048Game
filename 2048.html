@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2048 - yogesh1314</title>
+	<link rel="stylesheet" type="text/css" href="2048/css/2048.css">
+</head>
+<body>
+	<div id="main">
+		<div id="gameOverScreen">
+			<div>  Game Over ! <br/> Better Luck Next Time </div>
+			<a href="#" ><div id="restart1"> Restart </div></a>
+		</div>
+		<div id="reached2048">
+			<div>  Congratulations !! <br/> You made the 2048 tile </div>
+			<div id="button">
+				<a href="#" ><div id="restart2"> Restart </div></a>
+				<a href="#" ><div id="continue"> Continue </div></a>
+			</div>
+		</div>
+		<div id="score-top">
+			<div id="two048"> 2048 </div>
+			<div>
+				<div class="topbutton">
+					<div> score </div>
+					<div id="score">0</div>
+				</div>
+				<div class="topbutton">
+					<div> best </div>
+					<div id="highscore">0</div>
+				</div>
+			</div>
+			<div> 
+				<input id="newGame" type="submit" value="New Game"> 
+			</div>
+		</div>
+		<div id="gameplay">
+			<div>
+				<div class="text"> <b>Play 2048 Game</b> </div>
+				<div class="text"> Join the numbers and get to the <b>2048 tile </b></div>
+			</div>
+		</div>
+		<div id="container">
+			<div class="tile two"></div>
+			<div class="tile four"></div>
+			<div class="tile eight"></div>
+			<div class="tile oneSix"></div>
+			<div class="tile threeTwo"></div>
+			<div class="tile sixFour"></div>
+			<div class="tile oneTwoEight"></div>
+			<div class="tile twoFiveSix"></div>
+			<div class="tile fiveOneTwo"></div>
+			<div class="tile oneZeroTwoFour"></div>
+			<div class="tile twoZeroFourEight"></div>
+			<div class="tile"></div>
+			<div class="tile"></div>
+			<div class="tile"></div>
+			<div class="tile"></div>
+			<div class="tile"></div>
+		</div>
+	</div>
+	<script src="2048/js/jquery-1.11.3.min.js"></script>
+	<script src="2048/js/jquery.touchSwipe.min.js"></script>
+	<script type="application/ecmascript" src="2048/js/2048.js"></script>
+	<script>
+		function init(){
+			Game.init();
+		}
+		window.addEventListener('load', init);
+	</script>
+</body>
+</html>
